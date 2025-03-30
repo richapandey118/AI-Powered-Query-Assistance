@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS Link -->
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+    </header>
+
+    <main>
+        <div class="admin-container">
+            <h2>Manage Queries</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Query ID</th>
+                        <th>User Query</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="query-table">
+                    <tr>
+                        <td>1</td>
+                        <td>How to apply for scholarships?</td>
+                        <td>Pending</td>
+                        <td><button onclick="resolveQuery(1)">Resolve</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>When will the results be announced?</td>
+                        <td>Pending</td>
+                        <td><button onclick="resolveQuery(2)">Resolve</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script> <!-- JavaScript Link -->
+</body>
+</html>
